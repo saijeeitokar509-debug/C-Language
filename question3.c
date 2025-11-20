@@ -1,13 +1,17 @@
-// Write a program to print the sum of  natural numbers using a for loop.
 #include<stdio.h>
 int main(){
-    int i,num,sum=0;
-    printf("Enter number:");
-    scanf("%d",&num);
-    for ( i = 1; i <= num; i++)
+    int i,j,row;
+    printf("enter the row:");
+    scanf("%d",&row);
+
+    for ( i = row; i >= 1; i--)
     {
-        sum=sum+i;
+        for ( j = i; j >=1; j--)
+        {
+            printf("%d",i);
+        }
+        printf("\n");
     }
-    printf("sun of natural number:%d",sum);
-    
+
+
 }

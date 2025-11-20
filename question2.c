@@ -1,23 +1,15 @@
-// Write a program to print the sum of even number using a for loop.
 #include<stdio.h>
-int main(){
-    int i,num,evensum=0,oddsum=0;
-     printf("Enter natural number:");
-     scanf("%d",&num);
-    for ( i = 1; i <= num; i++)
-    {  if(i%2==0){
-       evensum=evensum+i;
-           printf("%d\n",i);
-        }
+int main (){
+    int  number;
+    printf("enter the number:");
+    scanf("%d",&number);
+    for (int i = 1; i <= number; i++)
+    {
+       for (int j = 1; j <= i; j++)
+       {
+         printf("%d",j);
+       }
+       printf("\n");
     }
-    printf("sum of even number:%d\n",evensum);
-    
-    for ( i = 1; i <= num; i++)
-    {  if(i%2!=0){
-       oddsum=oddsum+i;
-           printf("%d\n",i);
-        }
-    }
-    printf("sum of odd number:%d\n",oddsum);
-   
+    return 0;
 }
